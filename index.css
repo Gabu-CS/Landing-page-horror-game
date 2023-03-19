@@ -1,0 +1,60 @@
+*{                                /* seletor universal, oque é feito aqui vale para todas as tags*/
+  margin: 0;                     /*retira todos os espaços dos elementos da pagina*/      
+  box-sizing: border-box;  /*faça essa caixa medir de borda a borda, impede a pagina de passar do tamanho de uma borda a outra e assim nao precisa rolar o mouse. */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; /* esse comando e o de cima serve para deixar as palavras mais leves para alguns navegadores, mas sinceramente nao vi muito utilidade */
+}
+body {
+    text-align: center;                 /*comando para centralizar o texto */
+   padding-top: 160px;                  /*espaço no top e o 'px' depois do valor seria a medida pixel*/
+   background-image: url(https://i.ibb.co/rbw6x82/background-image-1.jpg); /*colocar a imagem de fundo */
+   background-repeat: no-repeat; /* para a imagem nao se repetir e fica uma imagem só */
+   background-size: cover;       /* o 'cover' usado para a imagem cobrir toda uma região no caso o 'body' */
+   background-position: center; /* centraliza a imagem */
+
+   height: 100vh; /* aumenta o tamanho do 'body' e o valor 100 pega toda a tela */
+
+   
+   font-family: 'Inter', sans-serif; /* o tipo de fonte. (nao esquecer de colocar a fonte no html tambem) */
+}
+
+h3{
+font-weight: 700;  /* o peso da fonte, deixa as letras mais grosa ou mais finas */
+font-size: 16px;   /* tamanho da fonte */
+line-height: 19px; /* altura da linha */
+color: white;      
+}
+
+h3 span {
+color: #FFC700; /* define uma cor nas palavras 'horror game', deve dar o comando no html para criar o span */
+}
+h1 {
+ color: #FFC700;
+ font-weight: 400;
+ font-size: 64px;
+ line-height: 80px;
+
+ font-family: 'Emilys Candy', cursive;
+}
+p {
+  font-size: 20px;
+line-height: 24px;
+margin-bottom: 72px; /* auementa a distancia da margem para baixo */
+color: #FFFFFF;
+opacity: .7; /*deixa transparente e o numero depois do ponto é referente ao grau de transparencia */
+}
+a{
+  padding: 12px 32px; /* aplicando espaço na altura e na largura assim chegando no tamanho requisitado da caixa */
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: white;
+  opacity: .6;
+}
+a:hover,  /* o 'hover' serve para quando passar o mouse em cima ae os comandos sao ativados, e a virgula é para que todo comando dado nas linhas abaixo se aplique a linha dela */
+.play {                 /* o nome dado no seletor 'class' no html */
+  text-decoration: none; /* retirar a linha abaixo da palavra */
+  color: black;
+  background-color: #FFC700; /* criar um fundo no caso amarelo */
+  opacity: 1;
+}
